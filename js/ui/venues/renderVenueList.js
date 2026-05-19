@@ -1,9 +1,12 @@
-export function renderVenueList(container, venues) {
-  if (venues.length === 0) {
-    return "<div class='text-center'>No venues found</div>";
+export function renderVenueList(container, response) {
+  const venueArray = response.data || [];
+
+  if (venueArray.length === 0) {
+    container.innerHTML = "<div class='text-center'>No venues found</div>";
+    return;
   }
 
-  const venueElements = venues.map((venue) => createVenueCard(venue));
+  const venueElements = venueArray.map((venue) => createVenueCard(venue));
   container.innerHTML = "";
   container.append(...venueElements);
 }
