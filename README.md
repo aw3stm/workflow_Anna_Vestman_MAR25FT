@@ -74,7 +74,7 @@ When running **git commit**, the pre-commit hook will automatically:
 
 **If any ESLint errors cannot be auto fixed, the commit will be aborted.**
 
-### ✓ Test Results
+### ✅ Test Results
 
 All automated tests have been successfully executed.
 
