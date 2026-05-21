@@ -29,3 +29,6 @@ jobs:
 
       - name: Run e2e tests
         run: npm run test:e2e
+        env:
+          TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
+          TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
