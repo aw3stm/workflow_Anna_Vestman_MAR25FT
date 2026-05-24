@@ -1,1 +1,14 @@
 node_modules/
+.env
+# Ignore everything that starts with .env.
+.env.*
+
+# Ignore all .env. files except this one
+!.env.example
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
